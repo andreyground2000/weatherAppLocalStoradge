@@ -1,0 +1,175 @@
+body {
+    font-family: 'Kufam', cursive;
+    
+}
+#main {
+    width: 70%;
+    min-height: 90vh;
+    margin: 0 auto;
+    background-color: rgba(52, 155, 224, 1);
+    background-image: url(img/kisspng-hot-air-balloon-white-cloud-clouds-5aa4f182f1aea1.7718190015207591709899.png);
+    border-radius: 2%;
+    
+}
+
+.inputEnterCity {
+    margin: 10% 1% 3% 25%;
+    border: 3px solid rgba(220, 234, 242, 1);
+    box-shadow: 4px 6px 9px 1px rgba(250,250,250,0.62);
+    background: rgba(220, 234, 242, 0.6);
+    border-radius: 8px;
+    min-height: 40px;
+    width: 40%;
+    font-weight: bold;
+    padding-left: 15px;
+    outline: none;
+    color:  rgb(39, 80, 104);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Kufam', cursive;
+}
+
+.inputEnterCity::-webkit-input-placeholder { 
+    color:  rgb(39, 80, 104);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Kufam', cursive;
+
+  }
+
+.addCityBtn,
+.deleteCityBtn {
+    border: 2px solid whitesmoke;
+    min-height: 30px;
+    border-radius: 8px;
+    background:  rgba(220, 234, 242, 0.5);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 4px 6px 9px 1px rgba(250,250,250,0.62);
+    font-family: 'Kufam', cursive;
+    outline: none;
+}
+.addCityBtn:hover,
+.deleteCityBtn:hover {
+    background:  rgba(220, 234, 242, 0.9);
+    transform: scale(1.1);
+}
+
+.listCities {
+    list-style: none;
+    margin-left: 20%;
+    border-radius: 8px;
+    width: 50%;
+    min-height: 60px;
+    background:  rgba(220, 234, 242, 0.5);
+    text-align: center;
+    padding: 5px;
+    color: #5E708A;
+    font-weight: bold;
+}
+.newCityDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.divForCitiesInList::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background:  rgba(250,250,250,1);
+    margin: 10px 0;
+    box-shadow: 4px 6px 9px 1px rgba(250,250,250,0.62);
+}
+.listCitiesItem {
+    margin-bottom: 12px;
+    background:  rgba(220, 234, 242, 0.9);
+    
+}
+
+.listBtnEdit,
+.listBtnDelete,
+.listBtnSave {
+    border: 2px solid whitesmoke;
+    min-height: 30px;
+    border-radius: 8px;
+    background:  rgba(220, 234, 242, 0.5);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    font-family: 'Kufam', cursive;
+    outline: none;
+}
+
+.listBtnDelete {
+    background:  rgba(237, 60, 33, 0.5);
+}
+.listBtnEdit {
+    background:  rgba(234, 237, 33, 0.5);
+}
+.listBtnSave {
+    background:  rgba(108, 237, 33, 0.5);
+}
+.listBtnEdit:hover,
+.listBtnDelete:hover,
+.listBtnSave:hover {
+    transform: scale(1.1);
+}
+
+.inputEditCity {
+    border: 1px solid rgba(220, 234, 242, 1);
+    background: rgba(220, 234, 242, 0.6);
+    border-radius: 8px;
+    min-height: 20px;
+    min-width: 60px;
+    color: rgba(54, 69, 79, 1);
+    font-weight: bold;
+    font-family: 'Kufam', cursive;
+}
+
+.wrapperForGeoExchange {
+    padding: 2%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.wrapperForGeo,
+.wrapperForExchange {
+    min-width: 25%;
+    min-height: 150px;
+    border-radius: 8px;
+    background:  rgba(37, 87, 116, 0.5);
+    color: white;
+    font-weight: bold;
+    box-shadow: 4px 6px 9px 1px rgba(250,250,250,0.62);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.geoHeader,
+.exchHeader {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.geoContentOne,
+.exchangeContentUSD,
+.exchangeContentEUR {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
